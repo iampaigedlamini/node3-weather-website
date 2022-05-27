@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('Unable to find location', undefined)
         } else {
-            callback(undefined, body.current.weather_descriptions[0]+ '. Visibility is ' +body.current.visibility+ ' km, cloud cover ' +body.current.cloudcover+ '%. It is currently '+body.current.temperature+' degrees celsius out. There is a '+body.current.precip+'% chance of rain. It feels like ' +body.current.feelslike+ ' degress celsius, wind speed ' +body.current.wind_speed+ ' km/h, wind direction ' +body.current.wind_dir[0]+ '.')
+            callback(undefined, body.current.weather_descriptions[0]+ '. Visibility is ' +body.current.visibility+ ' km, cloud cover ' +body.current.cloudcover+ '%. It is currently '+body.current.temperature+' degrees celsius out. There is a '+body.current.precip+'% chance of rain. It feels like ' +body.current.feelslike+ ' degress celsius, wind speed ' +body.current.wind_speed+ ' km/h, wind direction ' +body.current.wind_dir[0]+ '. ')
         }
     })
 }
